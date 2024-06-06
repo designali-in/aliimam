@@ -6,9 +6,9 @@
   Ali Imam
 </h1>
 
-<p>
-  aliima.in
-</p>
+## 👨‍💻 Website
+
+- [aliimam.in](https://aliimam.in)
 
 <p align="center">
   <a aria-label="Framework" href="https://nextjs.org">
