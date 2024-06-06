@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "prisma": {
+    "schema": "packages/database/prisma/schema.prisma"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "build:packages": "turbo build --filter=./packages/*",
+    "db:migrate:deploy": "turbo run db:migrate:deploy",
+    "db:push": "turbo run db:push",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "generate": "turbo run generate",
+    "postinstall": "prisma generate",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.10",
+    "ai-tsconfigs": "*",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "turbo": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.5.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "name": "aliimam"
+}

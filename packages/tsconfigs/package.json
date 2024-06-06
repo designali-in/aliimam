@@ -1,0 +1,20 @@
+{
+  "name": "ai-tsconfigs",
+  "version": "0.0.1",
+  "description": "The typescript config for ai projects",
+  "license": "MIT",
+  "files": [
+    "base.json",
+    "nextjs.json",
+    "react-library.json"
+  ],
+  "peerDependencies": {
+    "typescript": "5.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,mdx}": "prettier --cache --write"
+  }
+}

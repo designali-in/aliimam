@@ -1,0 +1,34 @@
+{
+  "name": "ai-database",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./src/client.ts"
+  },
+  "scripts": {
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "dev": "tsup src/* --watch",
+    "format": "prisma format",
+    "generate": "prisma generate",
+    "lint": "eslint . --max-warnings 0",
+    "prebuild": "npm run generate",
+    "postinstall": "prisma generate",
+    "predev": "npm run generate",
+    "studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.2"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.5.24",
+    "ai-eslints": "*",
+    "ai-tsconfigs": "*",
+    "eslint": "^8.57.0",
+    "prisma": "^5.10.2",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  }
+}

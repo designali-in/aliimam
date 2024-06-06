@@ -1,0 +1,24 @@
+{
+  "extends": "ai-tsconfigs/nextjs.json",
+  "compilerOptions": {
+    "strict": false,
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./*", "./src/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"],
+      "~/*": ["./public/*"]
+    },
+    "plugins": [{ "name": "next" }]
+  },
+  "include": [
+    "next-env.d.ts",
+    "next.config.js",
+    "**/*.ts",
+    "**/*.tsx",
+    ".contentlayer/generated",
+    ".next/types/**/*.ts"
+, "src/app/api/auth/[kindeAuth]/route.js"  ],
+  "exclude": ["node_modules"]
+}

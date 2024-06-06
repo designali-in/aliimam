@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "jsx": "preserve"
+  },
+  "display": "Next.js",
+  "extends": "./base.json"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "ai-prettiers",
+  "version": "0.0.3",
+  "description": "The prettier config for tszhong0411's projects",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "prettier-plugin-package-perfection": "^1.1.0",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prettier-plugin-sort-json": "^3.1.0"
+  },
+  "peerDependencies": {
+    "prettier": "3.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,mdx}": "prettier --cache --write"
+  }
+}
