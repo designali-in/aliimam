@@ -1,58 +1,85 @@
-# Turborepo Tailwind CSS starter
+<p align="center">
+  <img alt="" src="[https://honghong.me/images/projects/blog/cover.png](https://github.com/aliimam-in/aliimam/blob/main/apps/web/public/project/aliimam.jpg)">
+</p>
 
-This is an official starter Turborepo.
+<h1 align="center">
+  Ali Imam
+</h1>
 
-## Using this example
+<p>
+  aliima.in
+</p>
 
-Run the following command:
+<p align="center">
+  <a aria-label="Framework" href="https://nextjs.org">
+    <img alt="" src="https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=Next.js&labelColor=000">
+  </a>
+  <img alt="" src="https://img.shields.io/github/languages/top/aliimam-in/aliimam.in?style=for-the-badge&labelColor=000">
+  <a aria-label="License" href="https://github.com/aliimam-in/aliimam.in/blob/main/LICENSE">
+    <img alt="" src="https://img.shields.io/github/license/aliimam-in/aliimam.in?style=for-the-badge&labelColor=000">
+  </a>
+</p>
 
-```sh
-npx create-turbo@latest -e with-tailwind
-```
+Welcome to the monorepo of my personal blog! This repository houses the code for my blog, where I share my thoughts, projects, and insights. Feel free to explore and get inspired.
 
-## What's inside?
+## ✨ Features
 
-This Turborepo includes the following packages/apps:
+- ⚡️ Next.js 14 with App Router
+- 📝 MDX
+- 🎨 Tailwind CSS - for styling
+- 🌈 Radix UI - accessible UI components
+- 🛡 Strict TypeScript and ESLint configuration
+- 📱 Responsive design
+- 🌗 Light / Dark mode
+- 📈 SEO optimized with meta tags and JSON-LD
+- 📰 RSS feed
+- 🗺 Sitemap
+- 📝 Blog with likes and post views
+- 🔎 Blog post search
+- 📖 Table of contents for blog posts
+- 📷 Image zoom - zoom in on images in blog posts
+- 🎨 Animation - using Framer Motion
+- 💄 Prettier - code formatting
+- 🤖 Auto refresh - fast refresh when updating MDX
 
-### Apps and Packages
+## 🔨 Requirements
 
-- `docs`: a [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `web`: another [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `ui`: a stub React component library with [Tailwind CSS](https://tailwindcss.com/) shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- Node, recommended `20.x` with [corepack](https://nodejs.org/api/corepack.html) enabled
+- pnpm, recommended `9.x`
+- [Turso CLI](https://docs.turso.tech/reference/turso-cli)
+- [Visual Studio Code](https://code.visualstudio.com/) with [recommended extensions](.vscode/extensions.json)
+- Optionally [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## 👋 Getting Started
 
-### Building packages/ui
+Please refer to the [contributing guidelines](./CONTRIBUTING.md) for detailed information on how to start the app locally and contribute to this project.
 
-This example is set up to produce compiled styles for `ui` components into the `dist` directory. The component `.tsx` files are consumed by the Next.js apps directly using `transpilePackages` in `next.config.js`. This was chosen for several reasons:
+This project also uses / adapts the following open-source projects
 
-- Make sharing one `tailwind.config.js` to apps and packages as easy as possible.
-- Make package compilation simple by only depending on the Next.js Compiler and `tailwindcss`.
-- Ensure Tailwind classes do not overwrite each other. The `ui` package uses a `ui-` prefix for it's classes.
-- Maintain clear package export boundaries.
+Without them, this project would not have been possible:
 
-Another option is to consume `packages/ui` directly from source without building. If using this option, you will need to update the `tailwind.config.js` in your apps to be aware of your package locations, so it can find all usages of the `tailwindcss` class names for CSS compilation.
+- MDX Handling - from [contentlayer](https://github.com/contentlayerdev/contentlayer)
+- UI - from [shadcn/ui](https://github.com/shadcn-ui/ui)
 
-For example, in [tailwind.config.js](packages/tailwind-config/tailwind.config.js):
+Referenced the following projects for inspiration:
 
-```js
-  content: [
-    // app content
-    `src/**/*.{js,ts,jsx,tsx}`,
-    // include packages if not transpiling
-    "../../packages/ui/*.{js,ts,jsx,tsx}",
-  ],
-```
+- [fumadocs](https://fumadocs.vercel.app/) ❤️
+- [leerob.io](https://leerob.io/)
+- [ui.aceternity.com](https://ui.aceternity.com/)
 
-If you choose this strategy, you can remove the `tailwindcss` and `autoprefixer` dependencies from the `ui` package.
+and more but I can't remember them all 🥹
 
-### Utilities
+## ✍🏻 Author
 
-This Turborepo has some additional tools already setup for you:
+- [aliimam-in](https://github.com/aliimam-in)
 
-- [Tailwind CSS](https://tailwindcss.com/) for styles
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## 🪪 License
+
+Please do not deploy this directly to production. It is not a template and is not intended to be used as one.
+
+This project is open source and available under the [MIT License](LICENSE).
+
+<hr>
+<p align="center">
+Made with ❤️ with Ali Imam
+</p>
