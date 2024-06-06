@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="" src="[https://honghong.me/images/projects/blog/cover.png](https://github.com/aliimam-in/aliimam/blob/main/apps/web/public/project/aliimam.jpg)">
+  <img alt="" src="https://asset.cloudinary.com/dfyfxr10u/44df5ddc13b04ef8f0cb898992156fd8">
 </p>
 
 <h1 align="center">
