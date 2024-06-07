@@ -14,10 +14,6 @@
   <a aria-label="Framework" href="https://nextjs.org">
     <img alt="" src="https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=Next.js&labelColor=000">
   </a>
-  <img alt="" src="https://img.shields.io/github/languages/top/aliimam-in/aliimam.in?style=for-the-badge&labelColor=000">
-  <a aria-label="License" href="https://github.com/aliimam-in/aliimam.in/blob/main/LICENSE">
-    <img alt="" src="https://img.shields.io/github/license/aliimam-in/aliimam.in?style=for-the-badge&labelColor=000">
-  </a>
 </p>
 
 Welcome to the monorepo of my personal blog! This repository houses the code for my blog, where I share my thoughts, projects, and insights. Feel free to explore and get inspired.
@@ -63,7 +59,7 @@ Without them, this project would not have been possible:
 
 Referenced the following projects for inspiration:
 
-- [fumadocs](https://fumadocs.vercel.app/) ❤️
+- [honghong.me](https://honghong.me)
 - [leerob.io](https://leerob.io/)
 - [ui.aceternity.com](https://ui.aceternity.com/)
 
