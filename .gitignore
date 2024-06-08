@@ -37,11 +37,3 @@ yarn-error.log*
 .contentlayer
 .turbo
 
-
-# Build outputs
-.next/
-out/
-build
-dist
-/packages/database/node_modules
-/packages/eslints/node_modules
