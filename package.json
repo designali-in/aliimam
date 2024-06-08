@@ -1,4 +1,5 @@
 {
+  "name": "aliimam",
   "private": true,
   "prisma": {
     "schema": "packages/database/prisma/schema.prisma"
@@ -29,6 +30,5 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ],
-  "name": "aliimam"
+  ]
 }
