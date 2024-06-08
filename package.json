@@ -1,10 +1,9 @@
 {
-  "name": "aliimam",
   "private": true,
   "prisma": {
     "schema": "packages/database/prisma/schema.prisma"
   },
-  "scripts": { 
+  "scripts": {
     "build": "turbo build",
     "build:packages": "turbo build --filter=./packages/*",
     "db:migrate:deploy": "turbo run db:migrate:deploy",
@@ -30,5 +29,6 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "name": "aliimam"
 }
