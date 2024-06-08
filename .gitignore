@@ -32,6 +32,7 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+!packages/database/.env
 
 # vercel
 .vercel
@@ -42,5 +43,5 @@ yarn-error.log*
 # Build outputs
 .next/
 out/
-dist
+build
 
