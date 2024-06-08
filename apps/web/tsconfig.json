@@ -18,7 +18,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".contentlayer/generated",
-    ".next/types/**/*.ts", 
-    "src/app/api/auth/[kindeAuth]/route.js"],
+    ".next/types/**/*.ts"
+, "src/app/api/auth/[kindeAuth]/route.js"  ],
   "exclude": ["node_modules"]
 }
