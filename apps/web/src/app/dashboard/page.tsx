@@ -68,7 +68,7 @@ export default async function DashboardPage() {
         <div className="grid gap-1 text-center">
           <h1 className="text-3xl md:text-4xl font-bold">Your Downloads</h1>
           <p className="text-md text-slate-600 dark:text-slate-400">
-            Here you can see your downloads.
+            Here you can see your download.
           </p>
         </div>
 
