@@ -4,6 +4,7 @@
 node_modules
 /node_modules
 /.pnp
+.pnp
 .pnp.js
 
 # testing
@@ -41,6 +42,5 @@ yarn-error.log*
 # Build outputs
 .next/
 out/
-build
 dist
 
