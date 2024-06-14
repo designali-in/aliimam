@@ -1,5 +1,5 @@
 import { SubmitButton } from "@/components/dashboard/Submitbuttons";
-import { Button } from "@/components/ui/button";
+import { Button } from "ai-uis";
 import {
   Card,
   CardContent,
@@ -7,12 +7,12 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+} from "ai-uis";
+import { Input } from "ai-uis";
+import { Label } from "ai-uis";
+import { Textarea } from "ai-uis";
 import Link from "next/link";
-import prisma from "@/lib/db";
+import prisma from "ai-database";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { redirect } from "next/navigation";
 import { unstable_noStore as noStore } from "next/cache";
