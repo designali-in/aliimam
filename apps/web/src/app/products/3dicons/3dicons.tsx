@@ -1,6 +1,10 @@
 import { ScrollArea, ScrollBar } from 'ai-uis';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from 'ai-uis';
 
+import SmallWords from './types/smallwords';
+import CapsWords from './types/capswords';
+import Numbers from './types/numbers';
+import Icons from './types/icons';
 
 export function Icooons() {
   return (
@@ -26,16 +30,16 @@ export function Icooons() {
       </TabsList>
 
       <TabsContent value="1">
-      
+      <Icons />
       </TabsContent>
       <TabsContent value="2">
-      
+      <CapsWords />
       </TabsContent>
       <TabsContent value="3">
-      
+      <SmallWords />
       </TabsContent>
       <TabsContent value="4">
-     
+      <Numbers/>
       </TabsContent>
     </Tabs>
   );
