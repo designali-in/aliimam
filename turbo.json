@@ -1,34 +1,46 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": [
-    "**/.env.*local"
-  ],
+  "globalDependencies": ["**/.env.*local"],
   "globalEnv": [
-    "NODE_ENV"
+    "NODE_ENV",
+    "CLOUDINARY_URL",
+    "CLOUDINARY_API_KEY",
+    "CLOUDINARY_FOLDER",
+    "CLOUDINARY_API_SECRET",
+    "NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME",
+    "CLOUDINARY_CLOUD_NAME"
   ],
   "tasks": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "dist/**",
-        ".next/**",
-        "!.next/cache/**"
-      ]
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+    },
+    "generate": {
+      "dependsOn": ["^generate"]
+    },
+    "db:generate": {
+      "cache": false
     },
     "db:migrate:deploy": {},
     "db:push": {},
     "db:seed": {},
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
     "dev": {
       "cache": false,
       "persistent": true
     },
-    "generate": {
-      "dependsOn": [
-        "^generate"
-      ]
+    "web#build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"],
+      "env": []
     },
-    "lint": {}
+    "ui#build": {
+      "dependsOn": ["utils#build"]
+    },
+    "mdx#build": {
+      "dependsOn": ["utils#build"]
+    }
   }
 }

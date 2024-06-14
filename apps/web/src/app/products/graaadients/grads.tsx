@@ -22,7 +22,7 @@ export function Grads() {
       </TabsList>
 
       <TabsContent value="1">
-        <Grad1 />
+      <Grad1 />
       </TabsContent>
       <TabsContent value="2">
         <Video />

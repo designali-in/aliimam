@@ -1,6 +1,10 @@
 import { withContentlayer } from 'next-contentlayer';
-
+import bundleAnalyzer from '@next/bundle-analyzer'
 import './src/env/env.mjs'
+
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true'
+})
 
 /** @type {import('next').NextConfig} */
 
@@ -33,4 +37,4 @@ const nextConfig = {
 
 };
 
-export default withContentlayer(nextConfig);
+export default withBundleAnalyzer(withContentlayer(nextConfig));

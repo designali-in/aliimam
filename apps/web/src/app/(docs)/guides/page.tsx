@@ -3,7 +3,7 @@ import { allGuides } from "contentlayer/generated"
 import { compareDesc } from "date-fns"
 import { Cards } from "./cards"
 
-import { formatDate } from "ai-utilities"
+import { formatDate } from "@/lib/utils"
 import { DocsPageHeader } from "@/components/mdx/doc/page-header"
 
 export const metadata = {

@@ -16,8 +16,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "ai-eslints": "*",
-    "ai-tsconfigs": "*",
+    "ai-eslints": "workspace:*",
+    "ai-tsconfigs": "workspace:*",
     "tailwindcss": "^3.4.1"
   },
   "publishConfig": {

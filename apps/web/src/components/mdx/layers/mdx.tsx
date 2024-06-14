@@ -1,6 +1,6 @@
 'use client';
 
-import { type MDXComponents } from 'mdx/types';
+import { type MDXComponents } from 'ai-mdxs';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 
 import { Alert, AlertDescription, AlertTitle } from 'ai-uis';

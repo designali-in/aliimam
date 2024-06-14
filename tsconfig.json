@@ -1,3 +1,5 @@
 {
-  "extends": "ai-tsconfigs/base.json"
+  "exclude": ["apps/**", "packages/**"],
+  "extends": "ai-tsconfigs/base.json",
+  "include": ["**/*.ts"]
 }

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
-import { cn, truncate } from 'ai-utilities';
+import { truncate } from '@/lib/utils';
+import { cn } from 'ai-utilities';
 
 interface MdxPagerItem {
   title: string;

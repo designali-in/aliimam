@@ -1,85 +1,81 @@
-<p align="center">
-  <img alt="" src="https://github.com/aliimam-in/aliimam/blob/main/apps/web/public/project/aliimam.jpg">
-</p>
+# Turborepo starter
 
-<h1 align="center">
-  Ali Imam
-</h1>
+This is an official starter Turborepo.
 
-## 👨‍💻 Website
+## Using this example
 
-- [aliimam.in](https://aliimam.in)
+Run the following command:
 
-<p align="center">
-  <a aria-label="Framework" href="https://nextjs.org">
-    <img alt="" src="https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=Next.js&labelColor=000">
-  </a>
-  <img alt="" src="https://img.shields.io/github/languages/top/aliimam-in/aliimam.in?style=for-the-badge&labelColor=000">
-  <a aria-label="License" href="https://github.com/aliimam-in/aliimam.in/blob/main/LICENSE">
-    <img alt="" src="https://img.shields.io/github/license/aliimam-in/aliimam.in?style=for-the-badge&labelColor=000">
-  </a>
-</p>
+```sh
+npx create-turbo@latest
+```
 
-Welcome to the monorepo of my personal blog! This repository houses the code for my blog, where I share my thoughts, projects, and insights. Feel free to explore and get inspired .
+## What's inside?
 
-## ✨ Features
+This Turborepo includes the following packages/apps:
 
-- ⚡️ Next.js 14 with App Router
-- 📝 MDX
-- 🎨 Tailwind CSS - for styling
-- 🌈 Radix UI - accessible UI components
-- 🛡 Strict TypeScript and ESLint configuration
-- 📱 Responsive design
-- 🌗 Light / Dark mode
-- 📈 SEO optimized with meta tags and JSON-LD
-- 📰 RSS feed
-- 🗺 Sitemap
-- 📝 Blog with likes and post views
-- 🔎 Blog post search
-- 📖 Table of contents for blog posts
-- 📷 Image zoom - zoom in on images in blog posts
-- 🎨 Animation - using Framer Motion
-- 💄 Prettier - code formatting
-- 🤖 Auto refresh - fast refresh when updating MDX
+### Apps and Packages
 
-## 🔨 Requirements
+- `docs`: a [Next.js](https://nextjs.org/) app
+- `web`: another [Next.js](https://nextjs.org/) app
+- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
+- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
-- Node, recommended `20.x` with [corepack](https://nodejs.org/api/corepack.html) enabled
-- pnpm, recommended `9.x`
-- [Turso CLI](https://docs.turso.tech/reference/turso-cli)
-- [Visual Studio Code](https://code.visualstudio.com/) with [recommended extensions](.vscode/extensions.json)
-- Optionally [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-## 👋 Getting Started
+### Utilities
 
-Please refer to the [contributing guidelines](./CONTRIBUTING.md) for detailed information on how to start the app locally and contribute to this project.
+This Turborepo has some additional tools already setup for you:
 
-This project also uses / adapts the following open-source projects
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
 
-Without them, this project would not have been possible:
+### Build
 
-- MDX Handling - from [contentlayer](https://github.com/contentlayerdev/contentlayer)
-- UI - from [shadcn/ui](https://github.com/shadcn-ui/ui)
+To build all apps and packages, run the following command:
 
-Referenced the following projects for inspiration:
+```
+cd my-turborepo
+pnpm build
+```
 
-- [fumadocs](https://fumadocs.vercel.app/) ❤️
-- [leerob.io](https://leerob.io/)
-- [ui.aceternity.com](https://ui.aceternity.com/)
+### Develop
 
-and more but I can't remember them all 🥹
+To develop all apps and packages, run the following command:
 
-## ✍🏻 Author
+```
+cd my-turborepo
+pnpm dev
+```
 
-- [aliimam-in](https://github.com/aliimam-in)
+### Remote Caching
 
-## 🪪 License
+Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
 
-Please do not deploy this directly to production. It is not a template and is not intended to be used as one.
+By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
-This project is open source and available under the [MIT License](LICENSE).
+```
+cd my-turborepo
+npx turbo login
+```
 
-<hr>
-<p align="center">
-Made with ❤️ with Ali Imam
-</p>
+This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+
+Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+
+```
+npx turbo link
+```
+
+## Useful Links
+
+Learn more about the power of Turborepo:
+
+- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
+- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
+- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
+- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
+- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
+- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
