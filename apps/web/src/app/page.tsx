@@ -8,7 +8,6 @@ export default function Page() {
   return (
     <Suspense>
       <Hero />
-      <AboutMe />
       <Intro />
     </Suspense>
   );
