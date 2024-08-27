@@ -18,6 +18,7 @@ const Hero = () => {
     "Visual Studio Code",
     "Corel Draw",
     "ZBrush",
+    "Next.js",
   ];
 
   useEffect(() => {

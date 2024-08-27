@@ -49,7 +49,7 @@ importers:
         specifier: ^4.15.4
         version: 4.15.4
       turbo:
-        specifier: latest
+        specifier: ^2.0.3
         version: 2.0.3
       typescript:
         specifier: ^5.4.5
