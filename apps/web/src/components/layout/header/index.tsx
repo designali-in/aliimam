@@ -22,21 +22,7 @@ export async function Header() {
           <div className="mx-auto flex h-12 flex-1 items-center justify-end gap-2">
             <ThemeToggle />
             <CommandMenu />
-            <Separator
-              orientation="vertical"
-              className="h-6 bg-slate-400 dark:bg-slate-600 "
-            />
-            <div className="md:flex items-center mr-12 md:mr-0">
-              {(await isAuthenticated()) ? (
-                <UserNav
-                  email={user?.email as string}
-                  image={user?.picture as string}
-                  name={user?.given_name as string}
-                />
-              ) : (
-                <LoginNav />
-              )}
-            </div>
+            
           </div>
         </div>
       </div>
