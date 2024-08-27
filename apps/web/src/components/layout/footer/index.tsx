@@ -28,51 +28,13 @@ export const items: Menus[] = [
     href: "/portfolio",
     target: "",
   },
-  {
-    text: "Products",
-    href: "/products",
-    target: "",
-  },
-  {
-    text: "Graaadients",
-    href: "/products/graaadients",
-    target: "",
-  },
-  {
-    text: "3D Icons",
-    href: "/products/3dicons",
-    target: "",
-  },
-  {
-    text: "Designs",
-    href: "/designs",
-    target: "",
-  },
-  {
-    text: "Coding",
-    href: "/guides",
-    target: "",
-  },
-  {
-    text: "Blogs",
-    href: "/blogs",
-    target: "",
-  },
+  
   {
     text: "Contact",
     href: "/contact",
     target: "",
   },
-  {
-    text: "Terms",
-    href: "/terms",
-    target: "",
-  },
-  {
-    text: "Privacy",
-    href: "/privacy",
-    target: "",
-  },
+  
 ];
 
 const Underline = `hover:-translate-y-1 border border-slate-100 dark:border-slate-900 rounded-xl p-2.5 transition-transform text-slate-600 hover:border-slate-200 dark:hover:border-slate-800 hover:text-ali hover:dark:text-ali dark:text-slate-400 `;

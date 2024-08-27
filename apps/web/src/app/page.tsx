@@ -10,7 +10,6 @@ export default function Page() {
       <Hero />
       <AboutMe />
       <Intro />
-      <Chat />
     </Suspense>
   );
 }
